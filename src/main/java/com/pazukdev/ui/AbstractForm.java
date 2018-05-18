@@ -77,13 +77,10 @@ public abstract class AbstractForm extends VerticalLayout {
         setFields(Hotel.class.getName());
         setDescriptions();
         setPlaceholders();
-        setButtons();
-        setComponentsSizes();
-
+        setButtons();        
         setTextFieldsList();
-
         buttonBar = new HorizontalLayout(updateButton, cancelButton);
-
+        setComponentsSizes();
         setMargin(false);
     }
 
@@ -96,10 +93,9 @@ public abstract class AbstractForm extends VerticalLayout {
         setDescriptions();
         setPlaceholders();
         setButtons();
-
         buttonBar = new HorizontalLayout(updateButton, cancelButton);
-
         setComponentsSizes();
+        setMargin(false);
     }
 
 
