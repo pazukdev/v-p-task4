@@ -327,7 +327,8 @@ public abstract class AbstractForm extends VerticalLayout {
 
             case "Category":
                 for(Hotel hotel : hotelForm.getSelected()) {
-                    set.add(hotel.getCategoryId().toString());
+                    if(hotel.getCategoryId() != null) set.add(hotel.getCategoryId().toString());
+                    else set.add("No category");
                 }
                 break;
 
